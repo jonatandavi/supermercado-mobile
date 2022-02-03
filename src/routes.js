@@ -10,6 +10,7 @@ import Home from './pages/home';
 import Mercado from './pages/mercado';
 import Cadastro from './pages/cadastro';
 import DetailsMercado from './pages/contents/detail-mercados';
+import CadastroUser from './pages/cadastro-user';
 
 export default function Routes() {
     return (
@@ -19,7 +20,8 @@ export default function Routes() {
                 <Stack.Screen name="Contents" component={Contents} />
                 <Stack.Screen name="Detail" component={Detail} />
                 <Stack.Screen name="Mercado" component={Mercado} />
-                <Stack.Screen name="Cadastro" component={Cadastro} />
+                <Stack.Screen name="CadastroMercado" component={Cadastro} />
+                <Stack.Screen name="CadastroUser" component={CadastroUser} />
 
                 <Stack.Screen name="DetalhesMercado" component={DetailsMercado} />
             </Stack.Navigator>

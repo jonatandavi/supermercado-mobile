@@ -3,7 +3,7 @@ import { Text, View, Button, TextInput, TouchableOpacity, Image, Picker } from '
 import MaskInput from 'react-native-mask-input';
 import api from '../../services/api';
 import axios from 'axios';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 import styles from './styles';
 
@@ -60,7 +60,6 @@ export default function Cadastro() {
 
     return (
         <View style={styles.container}>
-            {/*<Text>Digite o nome do supermercado:</Text>*/}
             <Text style={{fontSize: 20, fontWeight: '500'}}>Cadastro de Supermercado</Text>
             <TextInput style={styles.input} placeholder='Nome do Supermercado' value={nome_mercado} onChangeText={text => setNome_mercado(text)} />
             <MaskInput
@@ -71,16 +70,6 @@ export default function Cadastro() {
                 mask={[/\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/]}
             />
             <TextInput style={styles.input} placeholder='Cidade' value={cidade} onChangeText={text => setCidade(text)} />
-            {/*<Text>Selecione o estado:</Text>
-            <Picker
-                style={styles.input}
-                selectedValue={uf}
-                enabled={true}
-                style={{ height: 10, width: 50 }}
-                onValueChange={(itemValue, itemIndex) => setUf(itemValue)}>
-                <Picker.Item label="Java" value="java" />
-                <Picker.Item label="JavaScript" value="js" />
-            </Picker>*/}
 
             <TextInput style={styles.input} placeholder='Estado' value={uf} onChangeText={text => setUf(text)} />
             <TextInput style={styles.input} placeholder='Nome da Rua' value={rua} onChangeText={text => setRua(text)} />

@@ -10,7 +10,6 @@ import * as Location from 'expo-location';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
-    
     const [loginMKTbool, setLoginMTKbool] = useState(false);
     const [loginUSERbool, setLoginUSERbool] = useState(false);
     const [login, setLogin] = useState('');
@@ -114,7 +113,7 @@ export default function Home() {
                         <TouchableOpacity style={styles.btnEntrar} onPress={loginUSER}>
                             <Text style={{color: '#ff8c00'}}>Entrar</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.btnCadastrar} onPress={() => navigation.navigate('Cadastro')}>
+                        <TouchableOpacity style={styles.btnCadastrar} onPress={() => navigation.navigate('CadastroUser')}>
                             <Text>Cadastrar</Text>
                         </TouchableOpacity>
                     </View>
@@ -127,7 +126,7 @@ export default function Home() {
                         <TouchableOpacity style={styles.btnEntrar} onPress={logar}>
                             <Text style={{color: '#ff8c00'}}>Entrar</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.btnCadastrar} onPress={() => navigation.navigate('Cadastro')}>
+                        <TouchableOpacity style={styles.btnCadastrar} onPress={() => navigation.navigate('CadastroMercado')}>
                             <Text>Cadastrar</Text>
                         </TouchableOpacity>
                     </View>

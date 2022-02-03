@@ -16,8 +16,8 @@ export default StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#ff8c00",
         width: '70%',
-        paddingTop: 15,
-        paddingBottom: 15,
+        paddingTop: 10,
+        paddingBottom: 10,
         //paddingHorizontal: 40,
         borderColor: '#000000',
         borderRadius: 5,
@@ -27,8 +27,8 @@ export default StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#000000",
         width: '70%',
-        paddingTop: 15,
-        paddingBottom: 15,
+        paddingTop: 10,
+        paddingBottom: 10,
         //paddingHorizontal: 40,
         borderColor: '#000000',
         borderRadius: 5,
@@ -98,14 +98,14 @@ export default StyleSheet.create({
         borderWidth: 1,
         borderRadius: 4,
 
-        /*shadowColor: "#000",
+        shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 1,
         },
         shadowOpacity: 0.20,
-        shadowRadius: 1.41,*/
+        shadowRadius: 1.41,
 
-        elevation: 2,
+        //elevation: 2,
     }
 });
