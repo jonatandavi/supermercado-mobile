@@ -15,21 +15,23 @@ export default StyleSheet.create({
     btnMercado: {
         alignItems: "center",
         backgroundColor: "#ff8c00",
+        width: '70%',
         paddingTop: 15,
         paddingBottom: 15,
-        paddingHorizontal: 40,
+        //paddingHorizontal: 40,
         borderColor: '#000000',
-        borderRadius: 15,
+        borderRadius: 5,
         borderWidth: 1
     },
     btnConsumidor: {
         alignItems: "center",
         backgroundColor: "#000000",
+        width: '70%',
         paddingTop: 15,
         paddingBottom: 15,
-        paddingHorizontal: 40,
+        //paddingHorizontal: 40,
         borderColor: '#000000',
-        borderRadius: 15,
+        borderRadius: 5,
         borderWidth: 1
     },
     txtBtn: {
@@ -57,18 +59,18 @@ export default StyleSheet.create({
     },
 
     btnsLogin: {
+        width: '80%',
+        justifyContent:'space-between',
         flexDirection: 'row',
         alignItems: 'center',
         marginVertical: 10
     },
     btnEntrar: {
-        width: '30%',
+        width: '40%',
         flex: 1,
         alignItems: 'center',
         alignContent: 'center',
         justifyContent: 'center',
-        marginLeft: 60,
-        marginRight: 5,
         paddingVertical: 10,
         borderWidth: 1,
         borderRadius: 4,
@@ -87,24 +89,22 @@ export default StyleSheet.create({
 
     },
     btnCadastrar: {
-        width: '30%',
+        width: '40%',
         flex: 1,
         alignItems: 'center',
         alignContent: 'center',
         justifyContent: 'center',
-        marginRight: 60,
-        marginLeft: 5,
         paddingVertical: 10,
         borderWidth: 1,
         borderRadius: 4,
 
-        shadowColor: "#000",
+        /*shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 1,
         },
         shadowOpacity: 0.20,
-        shadowRadius: 1.41,
+        shadowRadius: 1.41,*/
 
         elevation: 2,
     }

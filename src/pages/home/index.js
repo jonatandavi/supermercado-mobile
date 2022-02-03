@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity, Image, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, TouchableOpacity, Image, Dimensions, Platform } from 'react-native';
 
 import styles from './styles';
 import api from '../../services/api';
@@ -10,6 +10,7 @@ import * as Location from 'expo-location';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
+    
     const [loginMKTbool, setLoginMTKbool] = useState(false);
     const [loginUSERbool, setLoginUSERbool] = useState(false);
     const [login, setLogin] = useState('');
@@ -85,12 +86,13 @@ export default function Home() {
             email_usuario: email_usuario,
             senha_usuario: senha_usuario
         }).then(function (response) {
+            console.log(response.data)
             const nome_usuario = response.data.nome_usuario;
-            const endereco = response.data.endereco;
+            //const endereco = response.data.endereco;
             navigation.navigate('Contents', {
                 nome_usuario: nome_usuario,
-                email_usuario: email_usuario,
-                endereco: endereco
+                email_usuario: "",
+                endereco: ""
             })
         }).catch(function (error) {
             alert("Login não encontrado, tente novamente.")
