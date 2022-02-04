@@ -50,7 +50,7 @@ $ npm install --global expo-cli
 - Clone this repo to your local machine using:
 
 ```
-$ git clone https://github.com/jonatandavi/frontend-reactjs.git
+$ git clone https://github.com/jonatandavi/supermercado-mobile.git
 ```
 
 ### Setup
@@ -73,9 +73,11 @@ $ npm start
 
 ## 📋 Features
 
-### Documentation
-
-(...)
+- Google Maps to get current latitude and longitude;
+- ViaCEP to get address with zip code (https://viacep.com.br);
+- Mercado Pago Test API (https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/testing);
+- Barcode reader for products;
+- Users can have more than one addresses.
 
 ### Build with
 
